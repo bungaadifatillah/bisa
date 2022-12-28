@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+           android:id="@+id/profile_photo"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="59dp"
+            android:layout_marginEnd="32dp"
+            android:src="@drawable/polinela_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+           android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="Welcome,"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_photo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/profile_photo"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:text="To Aplication"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/welcome"
+            app:layout_constraintStart_toEndOf="@+id/welcome"
+            app:layout_constraintTop_toTopOf="@+id/welcome"/>
+
+        <GridLayout
+            android:id="@+id/grid_layout"
+            android:layout_width="357dp"
+            android:layout_height="340dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="38dp"
+            android:columnCount="2"
+            android:rowCount="4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_photo">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/konsultasi"
+                android:layout_width="146dp"
+                android:layout_height="140dp"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="146dp"
+                    android:layout_height="140dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:src="@drawable/support" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Konsultasi"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/penyakit"
+                android:layout_width="146dp"
+                android:layout_height="138dp"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="146dp"
+                    android:layout_height="140dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:src="@drawable/daftar_keluhan" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Penyakit"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tentang"
+                android:layout_width="146dp"
+                android:layout_height="140dp"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="146dp"
+                    android:layout_height="140dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:src="@drawable/tentang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Tentang"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/lokasi"
+                android:layout_width="146dp"
+                android:layout_height="140dp"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="146dp"
+                    android:layout_height="140dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:src="@drawable/pestisida" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Lokasi"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

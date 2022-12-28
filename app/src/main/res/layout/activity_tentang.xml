@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TentangActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/img_1"/>
+
+    <ImageView
+        android:id="@+id/img_2"
+        android:layout_width="339dp"
+        android:layout_height="318dp"
+        android:layout_below="@+id/img_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-17dp"
+        android:src="@drawable/ping2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_2"
+        android:text="Tentang Aplikasi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/txt_1"/>
+
+    <TextView
+        android:id="@+id/txt_2"
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:layout_below="@id/txt_1"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Aplikasi ini dibuat oleh Kelompok pum 11. Yang dibimbing oleh Ibu Agiska Ria Supriyatna, S.Si., M.T.I "
+        android:textColor="@color/black" />
+
+
+
+
+
+</RelativeLayout>
